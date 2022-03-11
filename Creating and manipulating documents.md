@@ -39,7 +39,7 @@ deleteOne(), deleteMany() deletes documents that matches given query.
 
 
 ### Questions
-#####1. How does the value of _id get assigned to a document?
+#####1.How does the value of _id get assigned to a document?
 
 Ans:
 It is automatically generated as an ObjectId type value.
