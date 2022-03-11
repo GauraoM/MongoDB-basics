@@ -8,23 +8,34 @@ Instance: A single machine locally or in the cloud, running a certain software, 
 
 Cluster - group of servers that store your data.
 
-#### Questions
-1. Why is MongoDB a NoSQL database?
+### Questions
+
+1.Why is MongoDB a NoSQL database?
+
+Ans:
 Because it does not utilize tables, row and columns to organize data.
 Because it uses a structured way to store and access data.
 
-2. What is the MongoDB Database?
+2.What is the MongoDB Database?
+
+Ans:
 The MongoDB database is an organized way to store and access data.
 MongoDb is a NoSQL database that uses documents to store data in organized way.
 
-3. What is a Document?
+3.What is a Document?
+
+Ans:
 Collection consist of many documents
 
-4. In a MongoDB Document what is the role of fields and values?
+4.In a MongoDB Document what is the role of fields and values?
+
+Ans:
 Each field has a value associated with it.
 A field is a unique identifier for a specific datapoint.
 
-5. How is MongoDB Atlas related to MongoDB the Database? What is Atlas?
+5.How is MongoDB Atlas related to MongoDB the Database? What is Atlas?
+
+Ans:
 They are both MongoDB products.
 Atlas has many tools and services within it that are built specifically for MongoDB Database.
 
