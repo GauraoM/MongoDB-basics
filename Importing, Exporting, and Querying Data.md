@@ -1,4 +1,4 @@
-#### Importing data
+### Importing data
 
 mongodump: Allows to get the data in BSON format.
 mongodump --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"
@@ -6,7 +6,7 @@ mongodump --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mo
 mongoexport: Stores the data in JSON format.
 mongoexport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --collection=sales --out=sales.json
 
-#### Exporting data
+### Exporting data
 
 mongorestore: Loads the data from binary database dump created by mongo dump.
 mongorestore --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"  --drop dump
@@ -20,7 +20,7 @@ When we looked at the sample_training.zips collection and issued the following q
 {"state": "NY"}
 {"state": "NY", "city": "ALBANY"} 
 
-##### Connect to the database go through sample training, collections and find state where state==NY 
+### Connect to the database go through sample training, collections and find state where state==NY 
 mongodb+srv://<username>:<password>@<cluster>.mongodb.net/admin
 username: provide your username
 password: provide you password
@@ -35,31 +35,31 @@ db.zips.find({"state": "NY"}).count() # How many state==NY
 db.zips.find({"state": "NY", "city": "ALBANY"})# How many state==NY and city==ALBANY 
 db.zips.find({"state": "NY", "city": "ALBANY"}).pretty() # Display in proper format
 
-#### Questions
-1. Which of the following documents is correct JSON?
+### Questions
+1.Which of the following documents is correct JSON?
 
 Ans:   
 {"name" : "Devi", "age": 19, "major": "Computer Science"}
 
-2. Write BSON or JSON in the numbered blanks in the following sentences to make them true?
+2.Write BSON or JSON in the numbered blanks in the following sentences to make them true?
   
 Ans:   
 MongoDB stores data in BSON and you can then view it in JSON.
 BSON is faster to parse and lighter to store than JSON.
 JSON Supports fewer type than BSON.
 
-3. Which of the following commands will add a collection that is stored in animals.json to an Atlas cluster?
+3.Which of the following commands will add a collection that is stored in animals.json to an Atlas cluster?
 
 Ans: mongoimport 
 
-4. In the sample_training.trips collection a person with birth year 1961 took a
+4.In the sample_training.trips collection a person with birth year 1961 took a
 trip that started at "Howard St & Centre St". What was the end station name for
 that trip?
 
 Ans:
 db.trips.find({"birth year":1961,"start station name":"Howard St & Centre St" })
 
-5. Using the sample_training.inspections collection find out how many inspections
+5.Using the sample_training.inspections collection find out how many inspections
 were conducted on Feb 20 2015.
 
 Ans:
