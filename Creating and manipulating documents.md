@@ -45,13 +45,13 @@ Ans:
 It is automatically generated as an ObjectId type value.
 You can select a non ObjectId type value when inserting a new document, as long as this value is unique to this collection
 
-2. Select all true statements from the following list:
+2.Select all true statements from the following list:
        
 Ans:
 If a document is inserted without a provided _id value, then the _id field and value will be automatically generated for the inserted document before insertion.
 MongoDB can store duplicate documents in the same collection, as long as their _id values are different.
 
-3. Which of the following commands will successfully insert 3 new documents into an empty pets collection?
+3.Which of the following commands will successfully insert 3 new documents into an empty pets collection?
 
 Ans:
 db.pets.insert([{ "_id": 1, "pet": "cat" },
@@ -68,7 +68,7 @@ db.pets.insert([{ "_id": 1, "pet": "cat" },
                 { "_id": 3, "pet": "fish" },
                 { "_id": 4, "pet": "snake" }], { "ordered": false })  
 
-4. MongoDB has a flexible data model, which means that you can have fields that contain documents, or arrays as their values.
+4.MongoDB has a flexible data model, which means that you can have fields that contain documents, or arrays as their values.
 
 Ans: 
 { "_id": 1,
@@ -92,7 +92,7 @@ Ans:
                   "paws": "cute but deadly" },
   "name": "Furball" }
 
-5. Given a pets collection where each document has the following structure and fields:
+5.Given a pets collection where each document has the following structure and fields:
 {
  "_id": ObjectId("5ec414e5e722bb1f65a25451"),
  "pet": "wolf",
@@ -110,7 +110,7 @@ db.pets.updateMany({"pet": "cat"},
                    {"$push": {"climate": "continental",
                                 "look": "adorable"}})
 
-6. The sample dataset contains a few databases that we will not use in this course. Clean up your Atlas cluster and get rid of all the collections in these databases:
+6.The sample dataset contains a few databases that we will not use in this course. Clean up your Atlas cluster and get rid of all the collections in these databases:
 
 sample_analytics
 sample_geospatial
@@ -119,7 +119,7 @@ Does removing all collections in a database also remove the database?
 
 Ans: Yes
 
-7. Which of the following commands will delete a collection named villains?
+7.Which of the following commands will delete a collection named villains?
        
 Ans: db.villains.drop()
 
