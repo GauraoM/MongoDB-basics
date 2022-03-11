@@ -37,30 +37,31 @@ db.zips.find({"state": "NY", "city": "ALBANY"}).pretty() # Display in proper for
 
 #### Questions
 1. Which of the following documents is correct JSON?
+Ans:   
 {"name" : "Devi", "age": 19, "major": "Computer Science"}
 
 2. Write BSON or JSON in the numbered blanks in the following sentences to make them true?
+Ans:   
 MongoDB stores data in BSON and you can then view it in JSON.
 BSON is faster to parse and lighter to store than JSON.
 JSON Supports fewer type than BSON.
 
 3. Which of the following commands will add a collection that is stored in animals.json to an Atlas cluster?
-mongoimport 
+Ans: mongoimport 
 
 4. In the sample_training.trips collection a person with birth year 1961 took a
 trip that started at "Howard St & Centre St". What was the end station name for
 that trip?
-
+Ans:
 db.trips.find({"birth year":1961,"start station name":"Howard St & Centre St" })
 
 5. Using the sample_training.inspections collection find out how many inspections
 were conducted on Feb 20 2015.
-
+Ans:
 db.inspections.find({"date":"Feb 20 2015"}).count()
 
-6.Query the zips collection from the sample_training database to find all
-   documents where the state is NY.Iterate through the query results.Find out how many ZIP codes there are in NY state.What about the ZIP codes that are in NY but also in the city of ALBANY?
-
+6.Query the zips collection from the sample_training database to find all documents where the state is NY.Iterate through the query results.Find out how many ZIP codes there are in NY state.What about the ZIP codes that are in NY but also in the city of ALBANY?
+Ans:
 use sample_training
 
 db.zips.find({"state":"NY"})
